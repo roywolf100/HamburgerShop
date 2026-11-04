@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/tvTitle"
+      android:textSize="28sp"
+      android:text="ג'מבו אמיגו בורגר"
+      android:layout_gravity="center"/>
+  
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="הזמן"
+      android:layout_gravity="center"
+      android:id="@+id/btnOrder"
+      />
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="נקה"
+      android:layout_gravity="center"
+      android:id="@+id/btnClear"
+      android:visibility="invisible"
+      />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="end"
+      android:orientation="vertical"
+      android:padding="16dp"
+      >
+
+  <TextView
+      android:id="@+id/tvSizeLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:text="גודל:"
+      android:textSize="18sp" />
+
+  <RadioGroup
+      android:id="@+id/rgSize"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="end"
+      >
+
+
+    <RadioButton
+        android:id="@+id/rbSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 גרם" />
+
+    <RadioButton
+        android:id="@+id/rbMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="200 גרם" />
+
+    <RadioButton
+        android:id="@+id/rbLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="400 גרם" />
+
+  </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="מידת עשייה:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/doneness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        >
+
+
+      <RadioButton
+          android:id="@+id/dR"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="רייר" />
+
+      <RadioButton
+          android:id="@+id/dMR"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="מדיום רייר" />
+
+      <RadioButton
+          android:id="@+id/dM"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="מדיום" />
+
+      <RadioButton
+          android:id="@+id/dMW"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="מדיום וול" />
+
+      <RadioButton
+          android:id="@+id/dWD"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="וול דאן" />
+
+
+    </RadioGroup>
+</LinearLayout>
+</LinearLayout>
